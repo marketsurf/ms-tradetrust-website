@@ -24,6 +24,7 @@ export enum ChainId {
   // Polygon
   Polygon = 137,
   PolygonMumbai = 80001,
+  Fuji = 43113,
 }
 
 export const ChainInfo: ChainInfo = {
@@ -82,5 +83,12 @@ export const ChainInfo: ChainInfo = {
     iconImage: "/static/images/networks/polygon.gif",
     networkName: "maticmum",
     explorerUrl: "https://mumbai.polygonscan.com",
+  },
+  [ChainId.Fuji]: {
+    label: "Avalanche Fuji",
+    chainId: ChainId.Fuji,
+    iconImage: "/static/images/networks/avax-fuji.gif",
+    networkName: "fuji",
+    explorerUrl: "https://testnet.snowtrace.io",
   },
 };

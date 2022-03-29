@@ -9,6 +9,7 @@ interface ViewProps {
 
 export const View: FunctionComponent<ViewProps> = ({ toggleQrReaderVisible }) => {
   const { currentChainId } = useProviderContext();
+  console.log(currentChainId);
   return (
     <div>
       <SampleMobile currentChainId={currentChainId} />
